@@ -1,10 +1,77 @@
+.pop-it {
+  font-family: "Montserrat Alternates", sans-serif;
+}
 .pop-it__head {
-  max-width: 100%;
+  max-width: 1920px;
   width: 100%;
-  height: 100%;
-  max-height: 900px;
+  height: 900px;
+  max-height: 100%;
   background-image: url("./Pop It/Pop It/images/background2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.pop-it__underhead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 120px auto 60px;
+  max-width: 1200px;
+  width: 100%;
+}
+.pop-it__underhead h3,
+.pop-it__underhead p {
+  text-align: center;
+}
+.pop-it__underhead h3 {
+  margin-bottom: 30px;
+  font-size: 42px;
+  font-weight: bold;
+}
+.pop-it__underhead p {
+  font-size: 18px;
+  font-weight: normal;
+  max-width: 900px;
+  width: 100%;
+}
+.pop-it__mid {
+  background-color: #9cfc50;
+}
+.pop-it__mid h2 {
+  padding-top: 90px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 900;
+}
+.pop-it__mid-boxes {
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pop-it__mid-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pop-it__mid-box img {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pop-it__mid-box p {
+  font-weight: 600;
+}
+.pop-it__mid-box button {
+  padding: 12px 42px;
+  font-family: "Montserrat Alternates";
+  border-color: orange;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #fd7f20;
 }/*# sourceMappingURL=main.css.map */
