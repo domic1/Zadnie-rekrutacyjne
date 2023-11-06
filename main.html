@@ -10,11 +10,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="hamburger.css">
     <title>Dominik Bącal</title>
 </head>
 
 <body>
     <header class="header">
+
         <button class="hamburger hamburger--emphatic" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
@@ -25,6 +27,7 @@
             <a class="nav__link" href="#sale">sale</a>
             <a class="nav__link" href="#contacts">contacts</a>
         </nav>
+
         <nav class="nav nav-desktop">
             <a class="nav__link" href="#about">about</a>
             <a class="nav__link" href="#sale">sale</a>
@@ -35,6 +38,7 @@
             <h1 class="company-name">NOT_A_BUBBLE.COM</h1>
 
         </div>
+
     </header>
 
     <section class="pop-it">
@@ -54,12 +58,17 @@
         </div>
         <div class="pop-it__underhead" id="about">
             <div class="container">
-                <h3>What is Pop it exactly?</h3>
-                <p>This is a child`s game, in which the process can be compared to the bursting of a bubble wrap. But
-                    unlike
-                    film, pop-it can be pressed with the same characteristic sensations and sounds "endlessly": dozens
-                    of
-                    silicone bubles are simply squeezed out in the other direction</p>
+                <div class="pop-it__underhead-text-field">
+                    <h3>What is Pop it exactly?</h3>
+                    <p>This is a child`s game, in which the process can be compared to the bursting of a bubble wrap.
+                        But
+                        unlike
+                        film, pop-it can be pressed with the same characteristic sensations and sounds "endlessly":
+                        dozens
+                        of
+                        silicone bubles are simply squeezed out in the other direction</p>
+                </div>
+
             </div>
         </div>
         <div class="pop-it__mid" id="sale">
@@ -87,25 +96,37 @@
         </div>
         <div class="pop-it__down">
             <div class="container">
-                <div class="pop-it__down-text-field">
-                    <h2>Rules of the game</h2>
-                    <p>Players take turns and click on the bumps. It is imperative to finish the row that you started.
-                        You
-                        can press a maximum of 3 bubbles at the same time (they must be near, you cannot press several
-                        pimples at once, if they are not close to each other) The task is to make the opponent go last.
-                        Who
-                        went last- he lost !)</p>
-                </div>
-                <div class="pop-it__down-img">
-                    <img src="./Pop It/Pop It/images/photo.jpg" alt="">
+                <div class="pop-it__down-boxes">
+                    <div class="pop-it__down-text-field">
+                        <h2>Rules of the game</h2>
+                        <p>Players take turns and click on the bumps. It is imperative to finish the row that you
+                            started.
+                            You
+                            can press a maximum of 3 bubbles at the same time (they must be near, you cannot press
+                            several
+                            pimples at once, if they are not close to each other) The task is to make the opponent go
+                            last.
+                            Who
+                            went last- he lost !)</p>
+                    </div>
+                    <div class="pop-it__down-img">
+                        <img src="./Pop It/Pop It/images/photo.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <footer class="footer">
-        <a class="nav__link" href="ABOUT">about</a>
-        <a class="nav__link" href="#SALE">sale</a>
-        <a class="nav__link" href="#CONTACTS">contacts</a>
+        <div class="company-name">
+            <p>NOT_A_BUBBLE.COM</p>
+        </div>
+        <div class="nav_links">
+            <a class="nav__link" href="#about">about</a>
+            <a class="nav__link" href="#sale">sale</a>
+            <a class="nav__link" href="#contacts">contacts</a>
+            <a class="nav__link" href="#contacts">contacts</a>
+        </div>
+
     </footer>
     <script src="js/main.js"></script>
 </body>
