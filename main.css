@@ -23,6 +23,10 @@ header {
   width: 100%;
 }
 .pop-it__head {
+  background-color: #fc2e20;
+}
+.pop-it__head-title {
+  margin-left: 16px;
   background-image: url("./Pop It/Pop It/images/background2.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -54,6 +58,7 @@ header {
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
+  cursor: pointer;
   background-color: #9cfc50;
   border: 1px solid #9cfc50;
 }
@@ -115,32 +120,34 @@ header {
 .pop-it__mid-box button {
   padding: 12px 42px;
   font-family: "Montserrat Alternates";
-  border-color: orange;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid #fd7f20;
   background-color: #fd7f20;
 }
 .pop-it__down {
-  margin: 60px auto;
+  margin: 120px auto;
+}
+.pop-it__down-boxes {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
   background-image: url("./Pop It/Pop It/images/bg-grid2.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
   background-attachment: fixed;
-}
-.pop-it__down-boxes {
   width: 100%;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 60px;
+  gap: 30px;
 }
 .pop-it__down-text-field {
-  padding: 18px;
   max-width: 60%;
   width: 100%;
 }
@@ -149,9 +156,8 @@ header {
   width: 100%;
 }
 .pop-it__down-img img {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  width: 100%;
+  max-width: 500px;
+  width: 80%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;

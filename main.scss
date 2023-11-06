@@ -22,14 +22,16 @@ header {
 	}
 
 	&__head {
-		background-image: url('./Pop It/Pop It/images/background2.png');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: local;
-		background-size: cover;
-		height: 75vh;
-		padding-bottom: 120px;
+		background-color: #fc2e20;
 		&-title {
+			margin-left: 16px;
+			background-image: url('./Pop It/Pop It/images/background2.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: local;
+			background-size: cover;
+			height: 75vh;
+			padding-bottom: 120px;
 			h2 {
 				padding-top: 190px;
 				text-align: left;
@@ -53,6 +55,7 @@ header {
 				font-weight: 600;
 				font-size: 24px;
 				text-transform: uppercase;
+				cursor: pointer;
 				background-color: #9cfc50;
 				border: 1px solid #9cfc50;
 			}
@@ -116,33 +119,35 @@ header {
 			button {
 				padding: 12px 42px;
 				font-family: 'Montserrat Alternates';
-				border-color: orange;
-				text-transform: uppercase;
 				font-weight: 700;
 				font-size: 16px;
+				text-transform: uppercase;
+				cursor: pointer;
+				border: 1px solid #fd7f20;
 				background-color: #fd7f20;
 			}
 		}
 	}
 	&__down {
-		margin: 60px auto;
-		background-image: url('./Pop It/Pop It/images/bg-grid2.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		object-fit: cover;
-		background-attachment: fixed;
+		margin: 120px auto;
 		&-boxes {
-			width: 100%;
-			height: auto;
+			padding-bottom: 30px;
 			display: flex;
-			justify-content: center;
+			justify-content: space-evenly;
 			align-items: center;
 			flex-direction: row;
-			gap: 60px;
+			background-image: url('./Pop It/Pop It/images/bg-grid2.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			object-fit: cover;
+			background-attachment: fixed;
+			width: 100%;
+			height: auto;
+			gap: 30px;
 		}
 
 		&-text-field {
-			padding: 18px;
 			max-width: 60%;
 			width: 100%;
 		}
@@ -150,9 +155,8 @@ header {
 			max-width: 40%;
 			width: 100%;
 			img {
-				padding-top: 60px;
-				padding-bottom: 60px;
-				width: 100%;
+				max-width: 500px;
+				width: 80%;
 				height: auto;
 				object-fit: cover;
 			}
