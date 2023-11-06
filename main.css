@@ -11,6 +11,9 @@ header {
   gap: 30px;
   background-color: #fc2e20;
 }
+header .hamburger {
+  display: none;
+}
 
 .pop-it {
   transform: translateY(-100px);
@@ -163,28 +166,8 @@ header {
      object-fit: cover;
 }
 
-.nav {
-  text-align: right;
-  background-color: #fc2e20;
-  font-family: "Montserrat Alternates";
-}
 .nav-mobile {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  transform: translateX(-102%);
-  transition: transform 0.3s;
-  z-index: 10;
-}
-.nav-mobile--active {
-  transform: translateX(0);
+  display: none;
 }
 .nav-desktop {
   display: block;
@@ -194,10 +177,8 @@ header {
   display: inline-block;
   margin: 0.5em;
   padding: 0.5em;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 2.3rem;
   color: black;
-  background-color: #fc2e20;
   text-transform: uppercase;
   text-decoration: none;
   transition: color 0.3s;
@@ -225,25 +206,74 @@ footer .nav__links .nav__link {
   background-color: unset;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
     width: 1140px;
     max-width: 100%;
   }
+  header {
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .pop-it__underhead-text-field {
+    padding: 16px;
+    max-width: 100%;
+    width: 100%;
+  }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
   .container {
     width: 960px;
     max-width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
     width: 720px;
     max-width: 100%;
   }
+  .nav-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    transform: translateX(-102%);
+    transition: transform 0.3s;
+    z-index: 10;
+  }
+  .nav-mobile--active {
+    transform: translateX(0);
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .nav header .hamburger {
+    display: block;
+    position: absolute;
+    top: 3em;
+    left: 1em;
+    transform: translateY(-50%);
+    z-index: 500;
+  }
+  .nav header .hamburger-inner, .nav header .hamburger-inner::before, .nav header .hamburger-inner::after {
+    background-color: white;
+    z-index: 500;
+  }
+  .pop-it__underhead-text-field {
+    margin: 60px auto;
+    padding: 30px;
+  }
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .container {
     width: 540px;
     max-width: 100%;
