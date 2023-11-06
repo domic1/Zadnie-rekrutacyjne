@@ -14,10 +14,33 @@
 </head>
 
 <body>
-    <section class="pop-it">
-        <div class="container">
-            <div class="pop-it__head">
+    <header class="header">
+        <button class="hamburger hamburger--emphatic" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <nav class="nav nav-mobile ">
+            <a class="nav__link" href="#about">about</a>
+            <a class="nav__link" href="#sale">sale</a>
+            <a class="nav__link" href="#contacts">contacts</a>
+        </nav>
+        <nav class="nav nav-desktop">
+            <a class="nav__link" href="#about">about</a>
+            <a class="nav__link" href="#sale">sale</a>
+            <a class="nav__link" href="#contacts">contacts</a>
+        </nav>
 
+        <div class="header__text">
+            <h1 class="company-name">NOT_A_BUBBLE.COM</h1>
+
+        </div>
+    </header>
+
+    <section class="pop-it">
+
+        <div class="pop-it__head">
+            <div class="container">
                 <div class="pop-it__head-title">
                     <h2>POP IT!</h2>
                     <p>Best Antistress Toy is the Endless toy bubble wrap</p>
@@ -26,8 +49,10 @@
             </div>
 
 
+
+
         </div>
-        <div class="pop-it__underhead">
+        <div class="pop-it__underhead" id="about">
             <div class="container">
                 <h3>What is Pop it exactly?</h3>
                 <p>This is a child`s game, in which the process can be compared to the bursting of a bubble wrap. But
@@ -37,7 +62,7 @@
                     silicone bubles are simply squeezed out in the other direction</p>
             </div>
         </div>
-        <div class="pop-it__mid">
+        <div class="pop-it__mid" id="sale">
             <div class="container">
                 <h2>Choose your Pop-It!</h2>
                 <div class="pop-it__mid-boxes">
@@ -77,6 +102,12 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <a class="nav__link" href="ABOUT">about</a>
+        <a class="nav__link" href="#SALE">sale</a>
+        <a class="nav__link" href="#CONTACTS">contacts</a>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

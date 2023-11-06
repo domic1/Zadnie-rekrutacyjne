@@ -11,21 +11,34 @@
 		background-image: url('./Pop It/Pop It/images/background2.png');
 		background-position: center;
 		background-repeat: no-repeat;
+		background-attachment: local;
 		background-size: cover;
+		padding-bottom: 120px;
 		&-title {
 			h2 {
 				padding-top: 90px;
 				text-align: left;
-				margin-bottom: 60px;
+				margin-bottom: unset;
 				font-weight: 900;
 				font-size: 120px;
 				color: white;
 			}
 			p {
+				width: 38%;
+				margin-top: 12px;
+				padding-bottom: 60px;
 				font-size: 24px;
 				font-weight: normal;
 				max-width: 900px;
 				color: white;
+			}
+			button {
+				font-family: 'Montserrat Alternates';
+				font-weight: 800;
+				padding: 12px 60px;
+				text-transform: uppercase;
+				background-color: #9cfc50;
+				border: 1px solid #9cfc50;
 			}
 		}
 	}
@@ -118,6 +131,49 @@
 				width: 100%;
 				height: auto;
 			}
+		}
+	}
+}
+.nav {
+	text-align: right;
+	background-color: red;
+	font-family: 'Montserrat Alternates';
+	&-mobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: white;
+		transform: translateX(-102%);
+		transition: transform 0.3s;
+		z-index: 10;
+		&--active {
+			transform: translateX(0);
+		}
+	}
+	&-desktop {
+		font-family: 'Montserrat Alternates';
+		display: block;
+	}
+	&__link {
+		font-family: 'Montserrat Alternates';
+		position: relative;
+		display: inline-block;
+		margin: 0.5em;
+		padding: 0.5em;
+		font-size: 18px;
+		font-weight: 700;
+		color: black;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: color 0.3s;
+		&:hover {
+			color: red;
 		}
 	}
 }
