@@ -227,17 +227,34 @@ footer .nav__links .nav__link:hover {
   .container {
     width: 1140px;
     max-width: 100%;
+    padding: 16px;
   }
   header {
+    padding: 16px;
     margin: 0 auto;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
+  .pop-it {
+    transform: translateY(-1px);
+  }
+  .pop-it__head-title h2 {
+    padding-top: 30px;
+  }
   .pop-it__underhead-text-field {
     padding: 16px;
     max-width: 100%;
     width: 100%;
+  }
+  .pop-it__underhead p {
+    max-width: 100%;
+    width: 100%;
+  }
+  .pop-it__head-title {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 992px) {
@@ -288,6 +305,22 @@ footer .nav__links .nav__link:hover {
   header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inner::after {
     background-color: white;
     z-index: 500;
+  }
+  .pop-it__down {
+    margin: 60px auto;
+  }
+  .pop-it__down .pop-it__down-boxes {
+    flex-direction: column;
+  }
+  .pop-it__down .pop-it__down-text-field {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+  .pop-it__down .pop-it__down-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 }
 @media (max-width: 576px) {
