@@ -64,6 +64,11 @@ header .hamburger {
   cursor: pointer;
   background-color: #9cfc50;
   border: 1px solid #9cfc50;
+  transition: background-color ease-in-out 0.6s, border ease-in-out 0.6s;
+}
+.pop-it__head-title button:hover {
+  background-color: #5cc904;
+  border: 1px solid #5cc904;
 }
 .pop-it__underhead-text-field {
   margin: 120px auto 120px;
@@ -129,6 +134,11 @@ header .hamburger {
   cursor: pointer;
   border: 1px solid #fd7f20;
   background-color: #fd7f20;
+  transition: background-color ease-in-out 0.6s, border ease-in-out 0.6s;
+}
+.pop-it__mid-box button:hover {
+  border: 1px solid #fc2e20;
+  background-color: #fc2e20;
 }
 .pop-it__down {
   margin: 120px auto;
@@ -181,7 +191,7 @@ header .hamburger {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color ease-in-out 0.6s;
 }
 .nav__link:hover {
   color: #9cfc50;
@@ -204,6 +214,10 @@ footer .nav__links .nav__link {
   font-weight: normal;
   color: white;
   background-color: unset;
+  transition: color e 0.6s;
+}
+footer .nav__links .nav__link:hover {
+  color: #9cfc50;
 }
 
 @media (max-width: 1200px) {
