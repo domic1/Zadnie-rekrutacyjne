@@ -2,6 +2,7 @@ body {
 	font-family: 'Montserrat Alternates';
 	margin: unset;
 }
+
 header {
 	display: flex;
 	flex-direction: row-reverse;
@@ -176,6 +177,7 @@ header {
 		}
 	}
 }
+/* Nawigacja */
 .nav {
 	&-mobile {
 		display: none;
@@ -198,6 +200,7 @@ header {
 		}
 	}
 }
+/* Stopka */
 footer {
 	background-color: #333;
 	font-family: 'Montserrat Alternates';
@@ -220,6 +223,7 @@ footer {
 		}
 	}
 }
+/* RWD */
 @media (max-width: 1200px) {
 	.container {
 		width: 1140px;
@@ -271,26 +275,26 @@ footer {
 		&-desktop {
 			display: none;
 		}
-		header {
-			.hamburger {
-				display: block;
-				position: absolute;
-				top: 3em;
-				left: 1em;
-				transform: translateY(-50%);
-				z-index: 500;
-				&-inner,
-				&-inner::before,
-				&-inner::after {
-					background-color: white;
-					z-index: 500;
-				}
-			}
-		}
 	}
 	.pop-it__underhead-text-field {
 		margin: 60px auto;
 		padding: 30px;
+	}
+	header {
+		.hamburger {
+			display: block;
+			position: absolute;
+			top: 3em;
+			left: 1em;
+			transform: translateY(-50%);
+			z-index: 500;
+			&-inner,
+			&-inner::before,
+			&-inner::after {
+				background-color: white;
+				z-index: 500;
+			}
+		}
 	}
 }
 @media (max-width: 576px) {
